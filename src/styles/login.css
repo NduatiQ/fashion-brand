@@ -236,7 +236,8 @@ max-width: 500px;
 
 @media only screen and (max-width: 768px){
   .loginForm{
-    max-width: 350px;
+    max-width: 300px;
+    margin: 20px;
   }
   .background-container{
     width: 100%;

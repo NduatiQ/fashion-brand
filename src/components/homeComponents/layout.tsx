@@ -226,7 +226,7 @@ export function PageTop(){
         <div className = "layoutGrid">
         <div className = "yourHost">
             <div>
-                <img src="../../../public/assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg" loading = "lazy" alt="Profile Image" id="hostImg"/>
+                <img src="./jurica-koletic-7YVZYZeITc8-unsplash.jpg" loading = "lazy" alt="Profile Image" id="hostImg"/>
 
             </div>
             <div className='hostContent'>
