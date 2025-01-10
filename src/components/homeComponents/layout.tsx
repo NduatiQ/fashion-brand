@@ -50,7 +50,7 @@ export function Footer(){
     return(
         <div className="phoneFooter">
             <div className= "desktopStyle">
-        <img src="/public/assets/LUX VENTUS.svg" loading="lazy" alt="Lux Ventus Logo" id="footerLogo"/>
+        <img src="/fashion-brand/assets/LUX VENTUS.svg" loading="lazy" alt="Lux Ventus Logo" id="footerLogo"/>
         <div className = "innerContent">
         <p id = "footerHang">Let's Hang Out</p>
         <div id = "footerSocials">
