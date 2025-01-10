@@ -8,7 +8,7 @@ export default defineConfig({
   
   plugins: [react(), svgr()],
    //Github pages hosting configuration
-   base:'/fashion-brand/',
+   base: process.env.NODE_ENV === 'production' ? '/fashion-brand/' : '/',
   css: {
    
     preprocessorOptions: {
