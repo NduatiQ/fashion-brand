@@ -50,7 +50,7 @@ export function Footer(){
     return(
         <div className="phoneFooter">
             <div className= "desktopStyle">
-        <img src="/public/assets/LUX VENTUS.svg" alt="Lux Ventus Logo" id="footerLogo"/>
+        <img src="/public/assets/LUX VENTUS.svg" loading="lazy" alt="Lux Ventus Logo" id="footerLogo"/>
         <div className = "innerContent">
         <p id = "footerHang">Let's Hang Out</p>
         <div id = "footerSocials">
@@ -94,6 +94,7 @@ export function MobileNav() {
         src="/public/assets/LUX VENTUS.svg"
         id="navLogo"
         alt="lux ventus logo"
+        loading = "lazy"
       />
       <a
         onClick={() => setIsMenuOpen((prev) => !prev)} // Toggle menu visibility
@@ -102,6 +103,7 @@ export function MobileNav() {
           src="/public/assets/Hamburger.svg"
           style={{ width: '55px', height: '55px', cursor: 'pointer' }}
           alt="hamburger icon"
+          loading = "lazy"
         />
       </a>
 
@@ -157,7 +159,7 @@ function handleDesktopClick(name:string){
                         
                         <p>Contact Us</p></a>
                 </div>
-                <img src="/public/assets/search icon.svg" alt="Search icon"/>
+                <img src="/public/assets/search icon.svg" loading = "lazy" alt="Search icon"/>
             </div>
         )
     }
@@ -211,7 +213,7 @@ export function PageTop(){
             <div className = "topicContainer" ref={topicContainerRef}>
                 {Object.entries(topics). map(([name, imagePath]) => (
                     <div className = "topicContent" key = {name} style = {{}}>
-                        <img src = {imagePath} alt = {name} style = {{}}/>
+                        <img src = {imagePath} loading = "lazy" alt = {name} style = {{}}/>
                         <p>{name}</p>
                         <Button id="topicButton">View more</Button>
                     </div>
@@ -224,7 +226,7 @@ export function PageTop(){
         <div className = "layoutGrid">
         <div className = "yourHost">
             <div>
-                <img src="../../../public/assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="Profile Image" id="hostImg"/>
+                <img src="../../../public/assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg" loading = "lazy" alt="Profile Image" id="hostImg"/>
 
             </div>
             <div className='hostContent'>
@@ -277,12 +279,12 @@ export function PageTop(){
                 }`}                
                 key = {index}>
                     <div className= "diffCard">
-                    <img id="blogImg" src = {blog.blog} alt = {blog.Topic} />                    
+                    <img id="blogImg" loading = "lazy" src = {blog.blog} alt = {blog.Topic} />                    
                     <div id ='blogCategory'>{blog.category}</div>
                     </div>
                     <div className = "diffCard2">
                     <div className = "authorDetails">
-                        <img src={blog.AuthorPic} alt={blog.AuthorName} id ="authorimg" style = {{width:'40px', height:'40px', borderRadius:'50%'}}/>
+                        <img src={blog.AuthorPic} alt={blog.AuthorName} loading = "lazy" id ="authorimg" style = {{width:'40px', height:'40px', borderRadius:'50%'}}/>
                         <p id = 'blogAuthor' style={{marginLeft:'-6%'}}>{blog.AuthorName}</p>
                         <p id = 'blogAuthor'>{blog.Date}</p>
                     </div>
@@ -307,7 +309,7 @@ export function PageTop(){
                 <Divider style={{margin: '30px 0', width:'80%', marginLeft: '3vw'}}/>
                 <div className = "topRatedContent" key = {index}>
                     
-                    <img id="topRatedImg" src = {post.img} alt = {post.heading}/>
+                    <img id="topRatedImg" loading = "lazy" src = {post.img} alt = {post.heading}/>
                     <div className= 'ratedInnerContent'>
                         <p id="topRatedHeading">{post.heading}</p>
                         <div style={{display:'flex', flexDirection:'row', alignItems:'center', gap:'8px', marginTop:'10px'}}>
