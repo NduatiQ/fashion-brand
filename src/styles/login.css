@@ -1,0 +1,246 @@
+/* Overall body styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+--buttonBlue: #4CE0D7;
+--fadeGray: #BCBCBC;
+    --myShadow: 0 6px 6px 0 rgba(0, 0, 0, 0.05);
+    --contentBlack: #262626;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  overflow: visible;
+
+}
+
+h1{
+   font-family: 'Poppins', sans-serif;
+    font-weight:800;
+    font-size: 28px;
+   text-align: center;
+   color: var(--contentBlack);
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size: 24px;
+  text-align: center;
+  color: var(--fadeGray)
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+    font-weight:300;
+    font-size: 14px;
+  text-align: center;
+}
+
+/* Container for the background image */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://imgs.search.brave.com/nOD9sPHj6erimnIah5KsKmRvUr3Wrhcc1v9Y2nHlMIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdm/cmUuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9QYWRsb2NrLTEt/NzQyeDEwMjQucG5n') no-repeat center center;
+  background-size: fit; 
+  filter: blur(4px); 
+  z-index: -1; 
+}
+
+/* Style for the login form container */
+.loginForm {
+  position: absolute; /* Position it in relation to the viewport */
+  top: 50%;
+  left: 50%;
+  margin-top: -310px;
+  margin-left: -190px;
+  width: 100%;
+  max-width: 400px; 
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+
+
+/* Style for form elements */
+.loginForm div {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.formBody{
+  margin-top: 5vh;
+}
+.loginForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+    font-weight:800;
+    font-size: 16px;
+    color: var(--contentBlack);
+}
+
+.loginForm input[type="email"],
+.loginForm input[type = "username"],
+.loginForm input[type="password"],
+.loginForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#email, #firstName, #lastName, #phoneNumber, #password, #autofill{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Playfair Display';
+  font-size: 16px;
+}
+
+
+
+.loginForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--buttonBlue);
+  color: var(--contentBlack);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+    font-weight:800;
+    font-size: 16px;
+    color: var(--contentBlack);
+  
+
+}
+#logErrors{
+  font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    color: #FF6B6B;
+}
+
+.loginForm button:hover {
+  background-color: #4d4dff;
+}
+
+#register{
+  width: 100%;
+  padding: 10px;
+  background-color: #0000ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Playfair Display';font-size: 16px;
+}
+#register:hover {
+  background-color: #4d4dff;
+}
+
+.autoBtn{
+  margin-top: -20px;
+}
+
+
+.loginForm p {
+  color: #b30000;
+  font-family: 'Playfair Display';font-size: 14px;
+  font-weight: bold;
+}
+
+
+#autofill{
+  width: 60%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Playfair Display';font-size: 16px;
+  margin-left: 60px;
+
+  
+}
+
+#autofill:hover {
+  background-color: #4d4dff85;
+}
+
+.mantine-PasswordInput-visibilityToggle {
+  position: absolute;
+  margin-right: -30px;
+  margin-top: 40px;
+  color:#0000ff ;
+  transform: translateY(-50%);
+  height: 44px;
+  cursor: pointer;
+  z-index: 2; 
+  padding: 0;
+}
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.regForm{
+top: 64%;
+height: 540px;
+overflow: auto;
+background-blend-mode: darken;
+z-index: 1000;
+opacity: 0.85;
+max-width: 500px;
+
+}
+#logoutBtn{
+  width: 100%;
+  background-color: var(--buttonBlue);
+  height: 2rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px){
+  .loginForm{
+    max-width: 350px;
+  }
+  .background-container{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+}
