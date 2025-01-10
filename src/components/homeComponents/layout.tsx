@@ -91,7 +91,7 @@ export function MobileNav() {
   return (
     <div className="mobileNav">
       <img
-        src="/public/assets/LUX VENTUS.svg"
+        src="/fashion-brand/assets/LUX VENTUS.svg"
         id="navLogo"
         alt="lux ventus logo"
         loading = "lazy"
@@ -100,7 +100,7 @@ export function MobileNav() {
         onClick={() => setIsMenuOpen((prev) => !prev)} // Toggle menu visibility
       >
         <img
-          src="/public/assets/Hamburger.svg"
+          src="/fashion-brand/assets/Hamburger.svg"
           style={{ width: '55px', height: '55px', cursor: 'pointer' }}
           alt="hamburger icon"
           loading = "lazy"
@@ -144,7 +144,7 @@ function handleDesktopClick(name:string){
         }
         return(
             <div className = "desktopNav">
-                <a onClick = {() => handleDesktopClick('home')}><img src = "/public/assets/LUX VENTUS.svg" id = "navLogo" style={{cursor: 'pointer'}} alt = "lux ventus logo"/></a>
+                <a onClick = {() => handleDesktopClick('home')}><img src = "/fashion-brand/assets/LUX VENTUS.svg" id = "navLogo" style={{cursor: 'pointer'}} alt = "lux ventus logo"/></a>
                 <div className = 'menus'>
                     {["Fashion", "Lifestyle", "Spiritual", "Mental Health"].map((menu) => (
                         <a key = {menu} id='disabledMenu'>
@@ -159,7 +159,7 @@ function handleDesktopClick(name:string){
                         
                         <p>Contact Us</p></a>
                 </div>
-                <img src="/public/assets/search icon.svg" loading = "lazy" alt="Search icon"/>
+                <img src="/fashion-brand/assets/search icon.svg" loading = "lazy" alt="Search icon"/>
             </div>
         )
     }
@@ -226,7 +226,7 @@ export function PageTop(){
         <div className = "layoutGrid">
         <div className = "yourHost">
             <div>
-                <img src="./jurica-koletic-7YVZYZeITc8-unsplash.jpg" loading = "lazy" alt="Profile Image" id="hostImg"/>
+                <img src="/fashion-brand/assets/AdobeStock_647341454_Preview.jpeg" loading = "lazy" alt="Profile Image" id="hostImg"/>
 
             </div>
             <div className='hostContent'>
