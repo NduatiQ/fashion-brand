@@ -5,7 +5,9 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base:'/fashion-brand/',
   plugins: [react(), svgr()],
+   //Github pages hosting configuration
    
   css: {
    
